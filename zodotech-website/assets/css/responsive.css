@@ -1,0 +1,183 @@
+/**
+ * ZodoTech - Responsive Layout Adjustments
+ * Breakpoints: 1200px, 1024px, 768px, 640px, 480px, 360px
+ */
+
+/* Desktops & Laptops (<= 1200px) */
+@media (max-width: 1200px) {
+  .expertise-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .strengths-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablets Landscape & Smaller Laptops (<= 1024px) */
+@media (max-width: 1024px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+    padding-top: var(--space-6);
+  }
+  
+  .hero-visual {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .challenges-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .process-timeline {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .solutions-grid {
+    grid-template-columns: 1fr;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+  
+  .footer-brand {
+    grid-column: span 2;
+  }
+}
+
+/* Tablets Portrait & Large Mobile (<= 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 68px;
+    --space-20: 3.5rem;
+    --space-16: 2.75rem;
+  }
+
+  .nav-links,
+  .header-actions .btn {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+  
+  .grid-cols-2,
+  .grid-cols-3,
+  .grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .challenges-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .process-timeline {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+    padding: var(--space-6);
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-group.col-span-2 {
+    grid-column: span 1;
+  }
+  
+  .form-card {
+    padding: var(--space-6) var(--space-5);
+  }
+  
+  .cta-banner {
+    padding: var(--space-10) var(--space-6);
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+  
+  .footer-brand {
+    grid-column: span 1;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+}
+
+/* Small Mobile Phones (<= 480px & 360px) */
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 1rem;
+    --space-20: 2.75rem;
+  }
+  
+  .announcement-bar {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .strengths-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-strip {
+    grid-template-columns: 1fr;
+  }
+  
+  .faq-trigger {
+    padding: var(--space-5) var(--space-4);
+    font-size: 0.95rem;
+  }
+  
+  .faq-inner {
+    padding: 0 var(--space-4) var(--space-5);
+  }
+  
+  .cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .cta-actions .btn {
+    width: 100%;
+  }
+  
+  .brand-logo-img {
+    height: 34px;
+  }
+}

@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZodoTech - Professional Odoo ERP Solutions &amp; Custom Development</title>
+  <meta name="description" content="ZodoTech delivers professional Odoo ERP implementation, custom module development, business process automation, and third-party integrations for growing enterprises.">
+  <meta name="keywords" content="Odoo ERP, custom Odoo module, Odoo customization, business process automation, Odoo implementation, digital transformation">
+  <meta name="author" content="ZodoTech">
+
+  <!-- Open Graph / Social Sharing Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ZodoTech - Make Your Business Work Smarter with Odoo">
+  <meta property="og:description" content="Practical ERP solutions. Thoughtful customization. Built around your business workflows.">
+  <meta property="og:image" content="assets/images/zodotech-logo.png">
+  <meta property="og:url" content="https://zodotech.com/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ZodoTech - Professional Odoo ERP Solutions">
+  <meta name="twitter:description" content="Odoo ERP implementation, custom module engineering, and workflow automation.">
+  <meta name="twitter:image" content="assets/images/zodotech-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/typography.css">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/navigation.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/forms.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+  <!-- Section 1: Slim Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <div class="container announcement-content">
+      <span>Practical Odoo solutions for growing businesses.</span>
+      <a href="services.html" class="announcement-link">Explore Our Services</a>
+    </div>
+  </aside>
+
+  <!-- Section 2: Navigation (Top Bar Contract: Brand — 5 Links — 1 Action) -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Zone 1: Brand Wordmark -->
+      <a href="index.html" class="brand-link" aria-label="ZodoTech Home">
+        <img src="assets/images/zodotech-logo.png" alt="ZodoTech Logo" class="brand-logo-img" width="168" height="42">
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="industries.html" class="nav-link">Industries</a>
+        <a href="#approach" class="nav-link">Our Approach</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Zone 3: Primary Header Action -->
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          Discuss Your Project
+          <svg class="arrow-right" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Drawer Toggle Button -->
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-link">
+        <img src="assets/images/zodotech-logo.png" alt="ZodoTech" class="brand-logo-img" width="140" height="36">
+      </a>
+      <button type="button" class="drawer-close" id="drawerClose" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="drawer-links">
+      <a href="index.html" class="drawer-link active">Home</a>
+      <a href="about.html" class="drawer-link">About ZodoTech</a>
+      <a href="services.html" class="drawer-link">Services</a>
+      <a href="industries.html" class="drawer-link">Industries</a>
+      <a href="#approach" class="drawer-link">Our Approach</a>
+      <a href="contact.html" class="drawer-link">Contact Us</a>
+    </nav>
+    <div class="drawer-cta">
+      <a href="contact.html" class="btn btn-primary">Discuss Your Project</a>
+      <a href="mailto:odoodeveloper10@gmail.com" class="btn btn-secondary btn-sm">Email Our Team</a>
+    </div>
+  </aside>
+
+  <main id="mainContent">
+    <!-- Section 3: Hero (Two-Column Desktop Layout) -->
+    <section class="section" style="padding-top: var(--space-10); padding-bottom: var(--space-12);">
+      <div class="container">
+        <div class="hero-layout">
+          <!-- Left Column -->
+          <div class="hero-content">
+            <span class="section-kicker">Odoo ERP Engineering &amp; Development</span>
+            <h1 class="hero-headline">
+              Make Your Business Work Smarter with <span class="text-gradient">Odoo</span>.
+            </h1>
+            <p class="text-lead" style="margin-top: var(--space-6);">
+              From ERP implementation and custom Odoo development to business process automation, ZodoTech helps you simplify operations, connect workflows, and build a stronger foundation for growth.
+            </p>
+            <div class="hero-actions">
+              <a href="contact.html" class="btn btn-primary btn-lg">
+                Discuss Your Project
+                <svg class="arrow-right" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+              <a href="services.html" class="btn btn-secondary btn-lg">Explore Our Services</a>
+            </div>
+            <div class="hero-support-text">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0878F9" stroke-width="2" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              <span>Practical ERP solutions. Thoughtful customization. Built around your business.</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Vector Illustration -->
+          <div class="hero-visual">
+            <img src="assets/images/hero-illustration.svg" alt="ZodoTech connected Odoo ERP architecture dashboard with real-time workflow sync" width="680" height="520" loading="eager">
+          </div>
+        </div>
+
+        <!-- Metric KPI Strip (Adjacency to Hero Claim) -->
+        <div class="stat-strip reveal-on-scroll">
+          <div class="stat-item">
+            <span class="stat-value tabular-nums">100%</span>
+            <span class="stat-label">Native Odoo ORM Architecture</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value tabular-nums">0 Core</span>
+            <span class="stat-label">Hacks (Clean, Upgrade-Safe Code)</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value tabular-nums">10+ Modules</span>
+            <span class="stat-label">Sales, Accounting, Inventory &amp; Logistics</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value tabular-nums">&lt; 24h</span>
+            <span class="stat-label">Initial Technical Assessment Response</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Business Challenges -->
+    <section class="section section-alt" id="challenges">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Operational Bottlenecks</span>
+          <h2>Disconnected Processes Slow Your Business Down.</h2>
+          <p>
+            When teams spend hours bridging software gaps manually, growth stalls. See how tailored ERP configuration and clean module development solve root operational friction.
+          </p>
+        </div>
+
+        <div class="challenges-grid">
+          <div class="challenge-card reveal-on-scroll">
+            <span class="challenge-num">01. INEFFICIENCY</span>
+            <h3 class="challenge-title">Repetitive Manual Work</h3>
+            <p class="challenge-desc">
+              Staff re-keying sales orders into accounting, generating invoices by hand, or tracking stock across spreadsheets leads to human error and delayed order fulfilment.
+            </p>
+          </div>
+
+          <div class="challenge-card reveal-on-scroll reveal-delay-1">
+            <span class="challenge-num">02. SILOES</span>
+            <h3 class="challenge-title">Disconnected Systems</h3>
+            <p class="challenge-desc">
+              Separate platforms for CRM, e-commerce, warehousing, and finance create mismatched data, double bookings, and zero single-source-of-truth across your organization.
+            </p>
+          </div>
+
+          <div class="challenge-card reveal-on-scroll reveal-delay-2">
+            <span class="challenge-num">03. BLIND SPOTS</span>
+            <h3 class="challenge-title">Limited Operational Visibility</h3>
+            <p class="challenge-desc">
+              Decision makers waiting days for monthly spreadsheet consolidation cannot detect inventory shortages, delayed shipments, or cash-flow imbalances in real time.
+            </p>
+          </div>
+
+          <div class="challenge-card reveal-on-scroll">
+            <span class="challenge-num">04. BOTTLENECKS</span>
+            <h3 class="challenge-title">Inefficient Approval Flows</h3>
+            <p class="challenge-desc">
+              Purchase orders and discount approvals getting stuck in email chains delay procurement and frustrate customers. Automated multi-tier rules streamline every decision.
+            </p>
+          </div>
+
+          <div class="challenge-card reveal-on-scroll reveal-delay-1">
+            <span class="challenge-num">05. GAPS</span>
+            <h3 class="challenge-title">Rigid Off-The-Shelf Software</h3>
+            <p class="challenge-desc">
+              Generic ERP setups force your business to change working workflows to fit rigid software, rather than adapting the software to support your proprietary competitive advantage.
+            </p>
+          </div>
+
+          <div class="challenge-card reveal-on-scroll reveal-delay-2" style="background: var(--gradient-brand-subtle); border-color: rgba(8, 120, 249, 0.25);">
+            <span class="challenge-num" style="color: var(--color-electric-blue);">THE ZODOTECH FIX</span>
+            <h3 class="challenge-title">Tailored Odoo Engineering</h3>
+            <p class="challenge-desc">
+              We extend standard Odoo with clean inheritance, automated server actions, and resilient API bridges to eliminate manual friction while preserving clean upgrade paths.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Services (6 Professional Service Cards) -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Core Capabilities</span>
+          <h2>Specialized Odoo Services for Modern Businesses.</h2>
+          <p>
+            Whether implementing Odoo for the first time or extending an existing setup, we deliver maintainable, engineering-first ERP solutions.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <!-- Service 1 -->
+          <article class="card reveal-on-scroll">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Odoo ERP Implementation</h3>
+            <p class="card-desc">
+              End-to-end deployment configured around your business requirements. We handle database setup, chart of accounts, user roles, security rules, and initial data migration.
+            </p>
+            <a href="services.html#implementation" class="card-link">
+              Explore Implementation
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+            </a>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="card reveal-on-scroll reveal-delay-1">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Odoo Customization</h3>
+            <p class="card-desc">
+              Adapt views, forms, list displays, search filters, PDF reports, and business logic. Modify existing models using non-destructive inheritance that survives version upgrades.
+            </p>
+            <a href="services.html#customization" class="card-link">
+              Explore Customization
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+            </a>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="card reveal-on-scroll reveal-delay-2">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                <polyline points="2 17 12 22 22 17"/>
+                <polyline points="2 12 12 17 22 12"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Custom Odoo Module Development</h3>
+            <p class="card-desc">
+              Build proprietary, standalone modules for industry-specific business processes, complex pricing formulas, custom inventory valuation methods, and specialized operational records.
+            </p>
+            <a href="services.html#modules" class="card-link">
+              Explore Module Development
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+            </a>
+          </article>
+
+          <!-- Service 4 -->
+          <article class="card reveal-on-scroll">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="18" cy="5" r="3"/>
+                <circle cx="6" cy="12" r="3"/>
+                <circle cx="18" cy="19" r="3"/>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Odoo Integrations</h3>
+            <p class="card-desc">
+              Seamlessly connect Odoo to external platforms, including e-commerce storefronts, payment gateways, freight APIs, logistics trackers, and proprietary internal databases.
+            </p>
+            <a href="services.html#integrations" class="card-link">
+              Explore Integrations
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+            </a>
+          </article>
+
+          <!-- Service 5 -->
+          <article class="card reveal-on-scroll reveal-delay-1">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Business Process Automation</h3>
+            <p class="card-desc">
+              Eliminate manual tasks with automated triggers, email alerts, invoice dispatch, multi-step purchase approvals, and scheduled background maintenance jobs.
+            </p>
+            <a href="services.html#automation" class="card-link">
+              Explore Automation
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+            </a>
+          </article>
+
+          <!-- Service 6 -->
+          <article class="card reveal-on-scroll reveal-delay-2">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Odoo Support and Optimization</h3>
+            <p class="card-desc">
+              Resolve bugs, optimize PostgreSQL query performance, audit inherited modules, resolve conflicting overrides, and provide ongoing technical assistance for peace of mind.
+            </p>
+            <a href="services.html#support" class="card-link">
+              Explore Support &amp; Audit
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Odoo Expertise (10 Functional Modules) -->
+    <section class="section section-dark" id="expertise">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker on-dark">Modular Domain Mastery</span>
+          <h2>Extend Odoo to Fit the Way Your Business Works.</h2>
+          <p>
+            We implement and customize native Odoo applications to form a unified, connected operational ecosystem without broken dependencies.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+          <div class="expertise-card reveal-on-scroll">
+            <div class="expertise-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+            </div>
+            <h3 class="expertise-title">Sales &amp; CRM</h3>
+            <p class="expertise-desc">Lead scoring, custom quotation stages, price lists, and commission tracking.</p>
+          </div>
+
+          <div class="expertise-card reveal-on-scroll reveal-delay-1">
+            <div class="expertise-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            </div>
+            <h3 class="expertise-title">Accounting</h3>
+            <p class="expertise-desc">Chart of accounts, fiscal localization, automatic reconciliation, and e-invoicing.</p>
+          </div>
+
+          <div class="expertise-card reveal-on-scroll reveal-delay-2">
+            <div class="expertise-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            </div>
+            <h3 class="expertise-title">Purchase</h3>
+            <p class="expertise-desc">Vendor agreements, multi-level approval matrices, and automated reordering rules.</p>
+          </div>
+
+          <div class="expertise-card reveal-on-scroll reveal-delay-3">
+            <div class="expertise-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <h3 class="expertise-title">Inventory</h3>
+            <p class="expertise-desc">Multi-warehouse routing, batch/lot tracking, barcode scanner customization.</p>
+          </div>
+
+          <div class="expertise-card reveal-on-scroll reveal-delay-4">
+            <div class="expertise-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="expertise-title">HR &amp; Payroll</h3>
+            <p class="expertise-desc">Timesheets, attendance sync, leave management, and customized payroll structures.</p>
+          </div>
+
+          <div class="expertise-card reveal-on-scroll">
+            <div class="expertise-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3 class="expertise-title">Dashboards</h3>
+            <p class="expertise-desc">Executive KPI views, SQL-backed spreadsheet reporting, and automated digest emails.</p>
+          </div>
+
+          <div class="expertise-card reveal-on-scroll reveal-delay-1">
+            <div class="expertise-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3 class="expertise-title">Freight &amp; Logistics</h3>
+            <p class="expertise-desc">Waybill generation, container tracking, route planning, and 3PL carrier integration.</p>
+          </div>
+
+          <div class="expertise-card reveal-on-scroll reveal-delay-2">
+            <div class="expertise-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h3 class="expertise-title">Contracts</h3>
+            <p class="expertise-desc">Subscription billing cycles, milestone releases, SLAs, and digital sign approvals.</p>
+          </div>
+
+          <div class="expertise-card reveal-on-scroll reveal-delay-3">
+            <div class="expertise-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h3 class="expertise-title">Custom Logic</h3>
+            <p class="expertise-desc">Specialized data models, custom compute fields, and proprietary business workflows.</p>
+          </div>
+
+          <div class="expertise-card reveal-on-scroll reveal-delay-4">
+            <div class="expertise-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </div>
+            <h3 class="expertise-title">External APIs</h3>
+            <p class="expertise-desc">REST / XML-RPC / JSON-RPC endpoints for mobile apps, portals, and third-party SaaS.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Development Process (4-Stage Timeline) -->
+    <section class="section" id="approach">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Structured Engineering</span>
+          <h2>From Requirements to Practical Solutions.</h2>
+          <p>
+            We adhere to a transparent, disciplined 4-stage engineering lifecycle that ensures predictable timelines, stable deployments, and clean code.
+          </p>
+        </div>
+
+        <div class="process-timeline">
+          <div class="process-step reveal-on-scroll">
+            <span class="step-badge">01</span>
+            <h3 class="step-title">Understand</h3>
+            <p class="step-desc">
+              We explore your business friction points, review current workflows, audit existing Odoo models or legacy systems, and establish explicit technical specifications.
+            </p>
+          </div>
+
+          <div class="process-step reveal-on-scroll reveal-delay-1">
+            <span class="step-badge">02</span>
+            <h3 class="step-title">Design</h3>
+            <p class="step-desc">
+              We define data schemas, evaluate standard Odoo features versus custom module needs, plan UI view extensions, and architect API integration patterns.
+            </p>
+          </div>
+
+          <div class="process-step reveal-on-scroll reveal-delay-2">
+            <span class="step-badge">03</span>
+            <h3 class="step-title">Develop &amp; Validate</h3>
+            <p class="step-desc">
+              We write clean Python/XML code following Odoo guidelines, run automated test suites, test edge cases in sandbox staging, and validate workflows against actual data.
+            </p>
+          </div>
+
+          <div class="process-step reveal-on-scroll reveal-delay-3">
+            <span class="step-badge">04</span>
+            <h3 class="step-title">Deliver &amp; Improve</h3>
+            <p class="step-desc">
+              We coordinate deployment, provide complete technical documentation, train key stakeholders, and support agreed enhancements as your operations scale.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Industries -->
+    <section class="section section-alt" id="industries">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Sector Experience</span>
+          <h2>Workflows Tailored to Diverse Industries.</h2>
+          <p>
+            Every sector faces specific operational and regulatory requirements. Discover how ZodoTech adapts Odoo for specialized vertical requirements.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <div class="card reveal-on-scroll">
+            <h3 class="card-title">Trading &amp; Distribution</h3>
+            <p class="card-desc">
+              Multi-company inventory allocation, volume price tiers, automated vendor dropship routing, and landed cost reconciliation across import shipments.
+            </p>
+            <div class="meta-unboxed">
+              <span>Import/Export</span><span class="separator">·</span><span>Landed Costs</span>
+            </div>
+          </div>
+
+          <div class="card reveal-on-scroll reveal-delay-1">
+            <h3 class="card-title">Logistics &amp; Freight</h3>
+            <p class="card-desc">
+              Custom consignment tracking, automated container manifests, bill of lading generation, driver assignment workflows, and multi-currency billing.
+            </p>
+            <div class="meta-unboxed">
+              <span>Waybills</span><span class="separator">·</span><span>Fleet Routing</span>
+            </div>
+          </div>
+
+          <div class="card reveal-on-scroll reveal-delay-2">
+            <h3 class="card-title">Professional Services</h3>
+            <p class="card-desc">
+              Project profitability tracking, milestone-based customer invoicing, automated timesheet approvals, and real-time consultant utilization dashboards.
+            </p>
+            <div class="meta-unboxed">
+              <span>Timesheets</span><span class="separator">·</span><span>Milestones</span>
+            </div>
+          </div>
+
+          <div class="card reveal-on-scroll">
+            <h3 class="card-title">Manufacturing &amp; Assembly</h3>
+            <p class="card-desc">
+              Multi-level Bills of Materials (BOMs), work order capacity planning, scrap tracking, subcontracting workflows, and precision serial number genealogy.
+            </p>
+            <div class="meta-unboxed">
+              <span>BOMs</span><span class="separator">·</span><span>Work Centers</span>
+            </div>
+          </div>
+
+          <div class="card reveal-on-scroll reveal-delay-1">
+            <h3 class="card-title">Retail &amp; E-Commerce</h3>
+            <p class="card-desc">
+              Omnichannel inventory synchronization between Odoo POS, Shopify, WooCommerce, or custom portals, ensuring synchronized stock and unified customer records.
+            </p>
+            <div class="meta-unboxed">
+              <span>POS</span><span class="separator">·</span><span>Storefront Sync</span>
+            </div>
+          </div>
+
+          <div class="card reveal-on-scroll reveal-delay-2">
+            <h3 class="card-title">Healthcare &amp; Laboratories</h3>
+            <p class="card-desc">
+              Reagent batch expiry tracking, clinical sample chain-of-custody, custom medical device maintenance schedules, and audit-ready traceability records.
+            </p>
+            <div class="meta-unboxed">
+              <span>Batch Tracking</span><span class="separator">·</span><span>Audit Trails</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-10);">
+          <a href="industries.html" class="btn btn-secondary">
+            View Complete Industry Profiles
+            <svg class="arrow-right" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 9: Why ZodoTech -->
+    <section class="section" id="why-us">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Engineering Tenets</span>
+          <h2>Practical Solutions. Thoughtful Engineering.</h2>
+          <p>
+            We focus on durable code architecture, transparent communication, and engineering choices that protect your ERP investment long-term.
+          </p>
+        </div>
+
+        <div class="strengths-grid">
+          <div class="strength-item reveal-on-scroll">
+            <h3 class="strength-title">Business-First Analysis</h3>
+            <p class="strength-desc">We clarify the root business workflow before writing code, preventing costly over-engineering.</p>
+          </div>
+
+          <div class="strength-item reveal-on-scroll reveal-delay-1">
+            <h3 class="strength-title">Respect for Standard Odoo</h3>
+            <p class="strength-desc">We leverage Odoo core models first, extending only where standard capabilities cannot satisfy requirements.</p>
+          </div>
+
+          <div class="strength-item reveal-on-scroll reveal-delay-2">
+            <h3 class="strength-title">Zero Core File Hacks</h3>
+            <p class="strength-desc">All customizations reside in clean, independent modules. Never modify core files, ensuring seamless upgrades.</p>
+          </div>
+
+          <div class="strength-item reveal-on-scroll reveal-delay-3">
+            <h3 class="strength-title">Performance &amp; Indexing</h3>
+            <p class="strength-desc">PostgreSQL-conscious ORM queries, optimized SQL indexes, and avoid N+1 query traps on large datasets.</p>
+          </div>
+
+          <div class="strength-item reveal-on-scroll">
+            <h3 class="strength-title">Security-Aware Development</h3>
+            <p class="strength-desc">Granular record rules, strict access groups, and protected API endpoints safeguarding sensitive business data.</p>
+          </div>
+
+          <div class="strength-item reveal-on-scroll reveal-delay-1">
+            <h3 class="strength-title">Meaningful Scenario Testing</h3>
+            <p class="strength-desc">Every customization is validated against production-grade edge cases, multi-currency values, and user permissions.</p>
+          </div>
+
+          <div class="strength-item reveal-on-scroll reveal-delay-2">
+            <h3 class="strength-title">Transparent Scope</h3>
+            <p class="strength-desc">Clear milestones, granular sprint deliverables, and honest advice when a simpler alternative exists.</p>
+          </div>
+
+          <div class="strength-item reveal-on-scroll reveal-delay-3">
+            <h3 class="strength-title">Long-Term Maintainability</h3>
+            <p class="strength-desc">Clean docstrings, organized XML templates, and concise developer handovers for internal technical teams.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 10: Featured Solution Categories -->
+    <section class="section section-alt" id="showcase">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Custom Application Patterns</span>
+          <h2>Featured Solution Categories.</h2>
+          <p>
+            Representative system blueprints demonstrating how ZodoTech extends standard Odoo into specialized operational engines.
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+          <!-- Solution 1 -->
+          <article class="solution-card reveal-on-scroll">
+            <div class="solution-visual">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                <rect x="1" y="3" width="15" height="13"/>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/>
+                <circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </div>
+            <div class="solution-content">
+              <span class="solution-tag">Logistics Architecture</span>
+              <h3 class="solution-title">Freight &amp; Logistics Management</h3>
+              <p class="solution-desc">
+                An integrated module suite connecting container booking, multi-leg shipment manifests, customs document tracking, and real-time driver mobile updates.
+              </p>
+              <div class="solution-features">
+                <div class="solution-feature-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Multi-modal freight tracking</span>
+                </div>
+                <div class="solution-feature-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Custom tariff &amp; duty calculation</span>
+                </div>
+                <div class="solution-feature-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Automated bill of lading (BOL) generation</span>
+                </div>
+              </div>
+              <a href="services.html#modules" class="card-link">Learn About Module Development <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg></a>
+            </div>
+          </article>
+
+          <!-- Solution 2 -->
+          <article class="solution-card reveal-on-scroll reveal-delay-1">
+            <div class="solution-visual">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            </div>
+            <div class="solution-content">
+              <span class="solution-tag">Financial Operations</span>
+              <h3 class="solution-title">Contract &amp; Financial Workflows</h3>
+              <p class="solution-desc">
+                Multi-tier approval workflows for high-value sales contracts, progressive milestone invoicing, automated retention deductions, and payment gate integrations.
+              </p>
+              <div class="solution-features">
+                <div class="solution-feature-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Role-based approval thresholds</span>
+                </div>
+                <div class="solution-feature-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Milestone &amp; percentage billing</span>
+                </div>
+                <div class="solution-feature-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Digital sign &amp; audit timestamping</span>
+                </div>
+              </div>
+              <a href="services.html#automation" class="card-link">Learn About Automation Workflows <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg></a>
+            </div>
+          </article>
+
+          <!-- Solution 3 -->
+          <article class="solution-card reveal-on-scroll reveal-delay-2">
+            <div class="solution-visual">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                <polyline points="2 17 12 22 22 17"/>
+                <polyline points="2 12 12 17 22 12"/>
+              </svg>
+            </div>
+            <div class="solution-content">
+              <span class="solution-tag">Enterprise Extension</span>
+              <h3 class="solution-title">Custom ERP Applications</h3>
+              <p class="solution-desc">
+                Bespoke Odoo sub-systems designed from scratch for unique industry business requirements, complete with custom relational tables, kanban views, and reporting matrices.
+              </p>
+              <div class="solution-features">
+                <div class="solution-feature-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>100% native Odoo ORM models</span>
+                </div>
+                <div class="solution-feature-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Tailored Kanban &amp; calendar views</span>
+                </div>
+                <div class="solution-feature-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Dedicated RESTful API exposure</span>
+                </div>
+              </div>
+              <a href="services.html#customization" class="card-link">Learn About Custom Apps <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 11: Frequently Asked Questions (Accessible Accordion) -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Clarity &amp; Guidance</span>
+          <h2>Frequently Asked Questions.</h2>
+          <p>
+            Common questions regarding Odoo capabilities, custom module development, version upgrades, and how we kick off client engagements.
+          </p>
+        </div>
+
+        <div class="faq-container">
+          <!-- FAQ 1 -->
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>What is Odoo ERP, and why choose it for business growth?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                Odoo is an open-source, modular enterprise management platform covering CRM, Sales, Invoicing, Accounting, Inventory, Manufacturing, and HR. Unlike rigid legacy enterprise software, Odoo's unified PostgreSQL architecture allows companies to activate modules gradually and customize business logic without vendor lock-in.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Can Odoo be customized without breaking future upgrades?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                Yes. ZodoTech strictly follows Odoo's Python object inheritance model (`_inherit = 'res.partner'`) and XPath XML view extensions. We never modify Odoo core files. By isolating all logic in standalone custom modules, your database can be upgraded smoothly when moving between major Odoo releases.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Can you develop custom modules from scratch?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                Yes. We design and build complete custom modules with dedicated relational models, security access rules (ir.model.access.csv), business rules, automated actions, kanban/form/tree views, and custom PDF report templates.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Can you integrate Odoo with our existing external software?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                Yes. We build bidirectional integrations using Odoo's external JSON-RPC / XML-RPC APIs, custom REST controllers, and webhook dispatchers. We integrate e-commerce (Shopify, WooCommerce, Magento), logistics APIs (FedEx, DHL, custom freight forwarders), payment gateways, and external ERPs.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Can you work with an existing, running Odoo installation?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                Yes. We routinely assist clients with existing installations experiencing performance slowdowns, broken customizations, or workflow bottlenecks. We perform code audits on a staging replica, identify conflicting module overrides, optimize slow SQL queries, and refactor unstable code before deploying fixes to production.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Which Odoo versions do you support?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                We develop and maintain solutions across Odoo Community and Odoo Enterprise editions for Odoo 18, 17, 16, 15, and 14. We support on-premise Linux (Ubuntu/Debian) deployments, Docker-based containers, cloud VPS environments, and Odoo.sh.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>How does a typical ZodoTech project begin?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                Every project begins with a structured requirements discovery. You share your current workflows, pain points, or new module requirements. We provide an initial technical evaluation and feasibility summary within 24 business hours, followed by a detailed scope definition and timeline before development starts.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="faq-item reveal-on-scroll">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>How can I request a quotation or technical assessment?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-inner">
+                You can submit your project details through our <a href="contact.html" style="color: var(--color-electric-blue); font-weight: 600; text-decoration: underline;">Contact Form</a> or email our engineering team directly at <a href="mailto:odoodeveloper10@gmail.com" style="color: var(--color-electric-blue); font-weight: 600;">odoodeveloper10@gmail.com</a>. Mention your current Odoo version (or if you are planning a fresh installation) and the specific workflows you want to address.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 12: Final CTA Banner (Deep Navy with Brand Gradients) -->
+    <section class="section" style="padding-bottom: var(--space-24);">
+      <div class="container">
+        <div class="cta-banner reveal-on-scroll">
+          <div class="cta-content">
+            <span class="section-kicker on-dark">Ready to Optimize?</span>
+            <h2 class="cta-title">Let's Build a Better Way to Work.</h2>
+            <p class="cta-desc">
+              Tell us about your current Odoo setup, business challenges, or the solution you want to develop. We provide clear advice, clean engineering, and transparent project scoping.
+            </p>
+            <div class="cta-actions">
+              <a href="contact.html" class="btn btn-primary btn-lg">
+                Start a Conversation
+                <svg class="arrow-right" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+              </a>
+              <a href="mailto:odoodeveloper10@gmail.com" class="btn btn-dark btn-lg">
+                Email Our Team
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Section 13: Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link" aria-label="ZodoTech Home">
+            <img src="assets/images/zodotech-logo.png" alt="ZodoTech" class="footer-logo" width="160" height="40">
+          </a>
+          <p class="footer-desc">
+            ZodoTech provides practical technology solutions for businesses that want to improve operations, connect workflows, and extend Odoo to meet their requirements.
+          </p>
+          <a href="mailto:odoodeveloper10@gmail.com" class="footer-email-block">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>odoodeveloper10@gmail.com</span>
+          </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About ZodoTech</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="industries.html" class="footer-link">Industries</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Service Capabilities -->
+        <div>
+          <h4 class="footer-heading">Capabilities</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#implementation" class="footer-link">Odoo Implementation</a></li>
+            <li><a href="services.html#customization" class="footer-link">Odoo Customization</a></li>
+            <li><a href="services.html#modules" class="footer-link">Custom Modules</a></li>
+            <li><a href="services.html#integrations" class="footer-link">API Integrations</a></li>
+            <li><a href="services.html#automation" class="footer-link">Process Automation</a></li>
+            <li><a href="services.html#support" class="footer-link">Support &amp; Audit</a></li>
+          </ul>
+        </div>
+
+        <!-- Tagline & Engineering Discipline -->
+        <div>
+          <h4 class="footer-heading">Brand Philosophy</h4>
+          <p style="font-size: 0.9rem; line-height: 1.6; color: #92A5C5; margin-bottom: var(--space-4);">
+            <strong style="color: var(--color-white); font-weight: 700;">Build. Customize. Grow.</strong><br>
+            Engineering-focused Odoo ERP solutions built around your business workflows. Zero core modifications, clean Python inheritance, and maintainable data architectures.
+          </p>
+          <div class="meta-unboxed" style="color: var(--color-cyan);">
+            <span>Enterprise</span><span class="separator">/</span><span>Community</span><span class="separator">/</span><span>Odoo.sh</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; <span data-dynamic-year>2026</span> ZodoTech. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="privacy.html" class="footer-legal-link">Privacy Policy</a>
+          <a href="terms.html" class="footer-legal-link">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

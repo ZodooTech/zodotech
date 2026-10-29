@@ -1,0 +1,1137 @@
+# MASTER PROJECT PROMPT: ZodoTech Professional Website
+
+## 1. ROLE AND OBJECTIVE
+
+Act as a senior frontend architect, professional UI/UX designer, brand identity specialist, JavaScript engineer, accessibility expert, SEO specialist, and GitHub Pages deployment expert.
+
+Your task is to design, develop, test, and deliver a complete, advanced, production-quality website for **ZodoTech**, a company focused on Odoo ERP solutions, custom Odoo module development, business process automation, ERP customization, and digital transformation.
+
+The website must have the quality of a premium international software development company.
+
+It must be:
+- Professionally designed.
+- Fully responsive.
+- Fast-loading.
+- Accessible.
+- SEO-friendly.
+- Easy to maintain.
+- Functionally implemented.
+- Compatible with GitHub Pages.
+- Compatible with custom-domain deployment.
+- Built using advanced HTML5, CSS3, and vanilla JavaScript.
+
+Do not deliver a basic landing page, a generic AI-generated template, a wireframe, or an incomplete prototype.
+
+Build the complete website with all requested pages, components, styles, interactions, and deployment documentation.
+
+---
+
+# 2. ABSOLUTE TECHNICAL RESTRICTIONS
+
+These requirements are mandatory.
+
+## Allowed technologies
+
+Use only:
+- HTML5.
+- CSS3.
+- Vanilla JavaScript.
+- SVG for icons and vector graphics.
+- Standard static website assets, including PNG, JPG, WebP, SVG, ICO, WOFF, and WOFF2 where appropriate.
+- Markdown for project documentation.
+
+Use modern browser APIs where appropriate.
+
+## STRICTLY PROHIBITED: JSON FILES
+
+**The final project must not contain any JSON files.**
+
+Do not create, include, generate, or require:
+
+- package.json
+- package-lock.json
+- yarn.json
+- tsconfig.json
+- manifest.json
+- site.webmanifest
+- data.json
+- config.json
+- settings.json
+- any other file ending in `.json`
+
+Do not create JSON configuration files for tools, build systems, deployment, website content, or application data.
+
+Do not use a framework or dependency that requires a JSON configuration file for the website to function.
+
+Do not use a Node.js build process.
+
+Do not require npm, yarn, pnpm, webpack, Vite, or another build tool.
+
+Do not require a package manager to install or run the website.
+
+Do not create JSON files merely because a framework, editor, or coding tool normally generates them.
+
+Do not include JSON data files for services, testimonials, FAQs, navigation, pricing, or website content.
+
+Write the content directly into semantic HTML.
+
+Use JavaScript objects or arrays inside `.js` files only when appropriate. Do not externalize website content into JSON files.
+
+Do not use a web app manifest. Use a standard favicon and appropriate HTML metadata instead.
+
+Do not use JSON-LD structured data because this project must avoid JSON-based structured-data files and formats. Use conventional SEO metadata and semantic HTML.
+
+Do not create a `package.json` even if you believe it would be convenient.
+
+### Other technical restrictions
+
+Do not use:
+- React.
+- Next.js.
+- Vue.
+- Angular.
+- TypeScript.
+- JSX.
+- PHP.
+- Python as a website backend.
+- A database.
+- A server-side rendering framework.
+- A mandatory build step.
+- A paid JavaScript framework.
+- A backend-dependent contact form implementation.
+
+Avoid external dependencies unless they provide a clear benefit and work directly in a static website.
+
+The completed project must run directly in a modern browser and deploy to GitHub Pages without compilation.
+
+If an external service is needed for contact forms, document the integration clearly. Do not introduce a backend solely to send email.
+
+---
+
+# 3. COMPANY BRAND IDENTITY
+
+## Company name
+
+ZodoTech
+
+## Tagline
+
+Build. Customize. Grow.
+
+## Business focus
+
+ZodoTech provides practical technology solutions for businesses that want to improve operations, connect workflows, and extend Odoo to meet their requirements.
+
+The website should communicate:
+- Odoo ERP implementation.
+- Odoo customization.
+- Custom module development.
+- Business process automation.
+- Third-party integrations.
+- ERP troubleshooting and optimization.
+- Industry-specific workflow solutions.
+
+Position ZodoTech as a professional, engineering-focused technology company.
+
+Do not invent company history, certifications, client relationships, awards, customer statistics, or business achievements.
+
+## Reference website
+
+https://www.odolution.com/
+
+Use this reference to understand the presentation and positioning of an Odoo-focused services business.
+
+Develop an original ZodoTech design. Do not copy the reference website's source code, text, branding, or exact layout.
+
+## Supplied logo
+
+Use the ZodoTech logo provided by the owner.
+
+Recommended path:
+
+assets/images/zodotech-logo.png
+
+Preserve the original logo proportions and gradient.
+
+Inspect the source image before using it. If its checkerboard background is baked into the image, do not mistake that background for transparency.
+
+Create a consistent logo treatment for desktop navigation, mobile navigation, and the footer.
+
+Create a favicon using an appropriate supplied or derived brand mark.
+
+Do not distort or unnecessarily recreate the logo.
+
+---
+
+# 4. PROFESSIONAL BRAND COLOR SYSTEM
+
+Build the entire website around the colors of the ZodoTech logo.
+
+Use these initial colors:
+
+Primary navy:
+#071A42
+
+Deep navy:
+#06122F
+
+Electric blue:
+#0878F9
+
+Cyan:
+#00D5F2
+
+Vibrant purple:
+#8B18F5
+
+Magenta:
+#C51CF7
+
+White:
+#FFFFFF
+
+Light background:
+#F5F8FF
+
+Primary text:
+#101B35
+
+Secondary text:
+#63708A
+
+Border:
+#E4EAF4
+
+Use the following gradient as an initial brand accent:
+
+linear-gradient(120deg, #0878F9, #00D5F2, #8B18F5)
+
+Define the color system with CSS custom properties.
+
+Use gradients selectively on buttons, decorative elements, illustrations, borders, and highlighted text.
+
+The design must not be dominated by gradients or neon effects.
+
+Prioritize contrast, visual hierarchy, professional typography, and whitespace.
+
+---
+
+# 5. PROJECT DIRECTORY STRUCTURE
+
+Create a clean, maintainable static website.
+
+Use this structure as the target:
+
+zodotech-website/
+│
+├── index.html
+├── about.html
+├── services.html
+├── industries.html
+├── contact.html
+├── privacy.html
+├── terms.html
+├── 404.html
+├── robots.txt
+├── sitemap.xml
+├── CNAME
+├── README.md
+│
+├── assets/
+│   ├── images/
+│   │   ├── zodotech-logo.png
+│   │   ├── hero-illustration.svg
+│   │   └── favicon.ico
+│   │
+│   ├── icons/
+│   │   └── relevant SVG icon files
+│   │
+│   ├── fonts/
+│   │   └── optional local font files
+│   │
+│   ├── css/
+│   │   ├── variables.css
+│   │   ├── reset.css
+│   │   ├── typography.css
+│   │   ├── global.css
+│   │   ├── layout.css
+│   │   ├── components.css
+│   │   ├── navigation.css
+│   │   ├── sections.css
+│   │   ├── animations.css
+│   │   ├── forms.css
+│   │   ├── footer.css
+│   │   └── responsive.css
+│   │
+│   └── js/
+│       ├── main.js
+│       ├── navigation.js
+│       ├── animations.js
+│       ├── interactions.js
+│       ├── faq.js
+│       ├── contact-form.js
+│       └── utilities.js
+│
+└── favicon.svg
+
+You may simplify or adjust the structure if necessary, but keep the separation between HTML, CSS, JavaScript, images, and documentation.
+
+The tree above is illustrative: do not create unnecessary placeholder files or folders.
+
+Do not create any JSON files anywhere in the project.
+
+Do not generate dependency manifests.
+
+Do not include unused assets, empty files, or dead code.
+
+The website must function without a compilation process.
+
+### HTML page architecture
+
+Each page must have:
+- A complete HTML5 document.
+- Appropriate language metadata.
+- Responsive viewport configuration.
+- A unique page title.
+- A unique meta description.
+- Correct navigation.
+- Shared design patterns.
+- Appropriate content.
+- Working internal links.
+- A consistent footer.
+
+Use separate HTML files for the requested pages.
+
+Do not simulate all secondary pages using JavaScript when proper HTML pages are more appropriate.
+
+---
+
+# 6. DESIGN DIRECTION
+
+Create a distinctive, premium, modern SaaS-style website.
+
+The visual experience should combine:
+- Professional software-company branding.
+- Strong typography.
+- Clean layouts.
+- Carefully controlled gradients.
+- Sophisticated dashboard illustrations.
+- Precise alignment.
+- Subtle motion.
+- Consistent spacing.
+- Professional navigation.
+- Refined buttons and cards.
+- Elegant section transitions.
+
+The website should feel designed specifically for ZodoTech.
+
+Avoid:
+- Generic templates.
+- Excessive glassmorphism.
+- Excessive card shadows.
+- Random gradients.
+- Unnecessary floating circles.
+- Oversized empty areas.
+- Excessive rounded rectangles.
+- Distracting animation.
+- Emoji-based service icons.
+- Fake statistics.
+- Fake testimonials.
+- Fake client logos.
+- Fake certifications.
+- Invented partnerships.
+- Unverified claims.
+
+Use CSS, HTML, and SVG to create professional technical illustrations.
+
+Do not depend on large stock images to make the design look professional.
+
+---
+
+# 7. HOME PAGE IMPLEMENTATION
+
+Create a complete homepage with the following sections.
+
+## Section 1: Announcement bar
+
+Display a slim announcement above the main navigation.
+
+Suggested text:
+
+"Practical Odoo solutions for growing businesses."
+
+Include a relevant link to services.
+
+Keep it visually subtle and easy to update.
+
+## Section 2: Navigation
+
+Include:
+- ZodoTech logo.
+- Home.
+- About.
+- Services.
+- Industries.
+- Our Approach.
+- Contact.
+- A prominent "Discuss Your Project" button.
+
+Requirements:
+- Sticky navigation.
+- Subtle styling changes after scrolling.
+- Accessible mobile navigation.
+- Keyboard support.
+- Visible focus states.
+- Functional internal links.
+- No horizontal overflow.
+- No inaccessible hover-only menus.
+
+Keep the header compact and premium.
+
+## Section 3: Hero
+
+Create a strong two-column desktop layout.
+
+Left column:
+
+Headline:
+
+"Make Your Business Work Smarter with Odoo."
+
+Description:
+
+"From ERP implementation and custom Odoo development to business process automation, ZodoTech helps you simplify operations, connect workflows, and build a stronger foundation for growth."
+
+Primary CTA:
+
+"Discuss Your Project"
+
+Secondary CTA:
+
+"Explore Our Services"
+
+Supporting message:
+
+"Practical ERP solutions. Thoughtful customization. Built around your business."
+
+Right column:
+
+Create a sophisticated custom illustration featuring an ERP dashboard concept, connected workflow elements, and restrained blue, cyan, and purple accents.
+
+Use HTML, CSS, and SVG.
+
+Do not use a generic stock image.
+
+The visual must remain attractive at desktop, tablet, and mobile widths.
+
+## Section 4: Business challenges
+
+Headline:
+
+"Disconnected Processes Slow Your Business Down."
+
+Explain:
+- Repetitive manual work.
+- Disconnected systems.
+- Limited operational visibility.
+- Inefficient approval processes.
+- Business requirements that standard software does not fully address.
+
+Explain how suitable ERP configuration, integrations, and customization can help.
+
+Avoid exaggerated claims.
+
+## Section 5: Services
+
+Create six professional service cards.
+
+### Odoo ERP Implementation
+Help businesses configure and implement Odoo according to their requirements.
+
+### Odoo Customization
+Adapt Odoo views, forms, workflows, reports, and business logic.
+
+### Custom Odoo Module Development
+Build maintainable modules for specific business requirements.
+
+### Odoo Integrations
+Connect Odoo with supported external systems through suitable APIs and integration methods.
+
+### Business Process Automation
+Automate appropriate repetitive tasks, notifications, approvals, and workflows.
+
+### Odoo Support and Optimization
+Assist with troubleshooting, maintenance, improvements, and existing implementations.
+
+Every card must contain:
+- A consistent SVG icon.
+- A service title.
+- A concise description.
+- An appropriate destination.
+- A refined hover effect.
+
+## Section 6: Odoo expertise
+
+Headline:
+
+"Extend Odoo to Fit the Way Your Business Works."
+
+Include:
+- Sales and CRM.
+- Accounting and invoicing.
+- Purchase management.
+- Inventory and warehouses.
+- HR workflows.
+- Reporting and dashboards.
+- Freight and logistics.
+- Contract management.
+- Custom business processes.
+- External integrations.
+
+Use a sophisticated grid or visual system.
+
+Clearly distinguish between general service capabilities and actual existing packaged products.
+
+## Section 7: Development process
+
+Headline:
+
+"From Requirements to Practical Solutions."
+
+Create a four-stage process:
+
+01 — Understand
+Explore business problems, current workflows, and requirements.
+
+02 — Design
+Identify an appropriate technical approach.
+
+03 — Develop and Validate
+Implement the agreed solution and test relevant scenarios.
+
+04 — Deliver and Improve
+Deliver the solution, document relevant functionality, and support agreed improvements.
+
+Use a polished timeline or process diagram.
+
+## Section 8: Industries
+
+Include:
+- Trading and distribution.
+- Logistics and freight.
+- Professional services.
+- Manufacturing.
+- Retail and e-commerce.
+- Real estate.
+- Healthcare and laboratory operations.
+
+Describe possible use cases without inventing client experience.
+
+## Section 9: Why ZodoTech
+
+Headline:
+
+"Practical Solutions. Thoughtful Engineering."
+
+Highlight:
+- Business-focused requirements analysis.
+- Maintainable code.
+- Clear communication.
+- Respect for standard Odoo workflows.
+- Security-aware development.
+- Meaningful testing.
+- Transparent project scope.
+- Long-term maintainability.
+
+Avoid unsupported guarantees.
+
+## Section 10: Featured solution categories
+
+Create three professional showcase items:
+
+- Freight and Logistics Management.
+- Contract and Financial Workflows.
+- Custom ERP Applications.
+
+Present them as illustrative solution categories unless genuine portfolio evidence is supplied.
+
+Do not fabricate client names, results, testimonials, or completed engagements.
+
+## Section 11: Frequently asked questions
+
+Include:
+- What is Odoo ERP?
+- Can Odoo be customized?
+- Can you develop custom modules?
+- Can you integrate external applications?
+- Can you work with an existing Odoo system?
+- Which Odoo versions can you support?
+- How does a project begin?
+- How can I request a quotation?
+
+Use a fully accessible accordion.
+
+## Section 12: Final CTA
+
+Headline:
+
+"Let's Build a Better Way to Work."
+
+Description:
+
+"Tell us about your current Odoo setup, business challenges, or the solution you want to develop."
+
+Buttons:
+- Start a Conversation.
+- Email Our Team.
+
+Use a sophisticated deep-navy section with restrained brand gradients.
+
+## Section 13: Footer
+
+Include:
+- Logo.
+- Company description.
+- Navigation links.
+- Service links.
+- Contact email.
+- Privacy policy.
+- Terms of use.
+- Copyright notice.
+
+Use the email supplied by the owner:
+
+odoodeveloper@10gmail.com
+
+Do not invent telephone numbers, physical addresses, or social profile URLs.
+
+Use JavaScript to update the copyright year.
+
+---
+
+# 8. SECONDARY PAGES
+
+Build the following pages completely.
+
+## about.html
+
+Include:
+- Company introduction.
+- Brand philosophy.
+- Business-first approach.
+- Engineering principles.
+- Development practices.
+- Collaboration approach.
+- Project inquiry CTA.
+
+Do not invent company history or credentials.
+
+## services.html
+
+Include detailed sections for:
+- Odoo implementation.
+- Odoo customization.
+- Custom module development.
+- Integrations.
+- Business automation.
+- Support and optimization.
+
+Explain what each service involves, the problems it addresses, and what information customers should provide when requesting a quotation.
+
+## industries.html
+
+Include industry-specific sections for:
+- Trading and distribution.
+- Logistics.
+- Professional services.
+- Manufacturing.
+- Retail and e-commerce.
+- Real estate.
+- Healthcare and laboratory operations.
+
+Describe potential applications without claiming unverified experience.
+
+## contact.html
+
+Create a polished contact page with a functional form.
+
+Include:
+- Full name.
+- Business email.
+- Company name, optional.
+- Odoo version, optional.
+- Service of interest.
+- Estimated budget, optional.
+- Project subject.
+- Detailed project description.
+- Appropriate privacy consent.
+
+Use semantic HTML and proper labels.
+
+Validate required fields and email format.
+
+Do not request passwords, access tokens, payment card details, or unnecessary sensitive information.
+
+## privacy.html
+
+Create an editable privacy policy template covering information collection, contact form processing, data retention, data sharing, security, user rights, and contact information.
+
+Mark it for review against the company's actual practices and applicable law before publication.
+
+## terms.html
+
+Create an editable terms-of-use template covering acceptable use, intellectual property, external links, disclaimers, and appropriate liability provisions.
+
+Mark it for legal review before publication.
+
+## 404.html
+
+Create a polished, branded not-found page with:
+- A clear error message.
+- A link to the homepage.
+- A link to services.
+- Consistent branding.
+
+The page must work on GitHub Pages.
+
+---
+
+# 9. ADVANCED CSS REQUIREMENTS
+
+Write professional, maintainable CSS.
+
+Use:
+- CSS custom properties.
+- Modern Flexbox.
+- CSS Grid.
+- Fluid typography.
+- clamp().
+- min(), max(), and minmax() where appropriate.
+- Logical properties where practical.
+- Responsive containers.
+- Modern media queries.
+- Focus-visible states.
+- Appropriate transitions.
+- Consistent design tokens.
+
+Organize styles into separate CSS files.
+
+Use consistent naming conventions.
+
+Avoid:
+- Excessive !important.
+- Conflicting media queries.
+- Duplicate rules.
+- Fixed-width layouts that break on mobile.
+- Unnecessary CSS hacks.
+- Overly complex selectors.
+- Excessive use of absolute positioning.
+- Animations that interfere with reading.
+
+Create reusable styles for buttons, cards, section headings, navigation, forms, accordions, CTAs, and footer elements.
+
+Use appropriate CSS fallbacks for optional visual enhancements.
+
+The website must remain usable if advanced animation is unavailable.
+
+---
+
+# 10. ADVANCED JAVASCRIPT REQUIREMENTS
+
+Use modern vanilla JavaScript.
+
+Organize functionality into separate `.js` files.
+
+Do not create JSON files.
+
+Implement:
+
+### Navigation
+- Mobile menu.
+- Sticky header behavior.
+- Scroll-state styling.
+- Keyboard support.
+- Escape-key handling.
+- Correct accessibility attributes.
+- Appropriate focus management.
+
+### Interactions
+- Smooth scrolling where appropriate.
+- Active navigation states.
+- CTA interactions.
+- Accessible accordions.
+- Subtle hover and focus effects.
+
+### Animation
+- IntersectionObserver-based reveal animations.
+- Restrained transitions.
+- Reduced-motion support.
+- No unnecessary animation loops.
+
+### Contact form
+- Client-side validation.
+- Submission progress state.
+- Error handling.
+- Success feedback only after reliable confirmation.
+- Protection against accidental repeated submissions.
+- Graceful handling of network failures.
+
+### General JavaScript
+- Avoid global namespace pollution.
+- Use event listeners appropriately.
+- Handle missing elements safely.
+- Avoid unsafe HTML insertion.
+- Avoid duplicate event handlers.
+- Avoid unnecessary third-party libraries.
+- Ensure scripts work on every page.
+- Avoid uncaught runtime errors.
+
+Use defer where appropriate.
+
+Do not assume every page contains the same HTML elements.
+
+---
+
+# 11. FULL RESPONSIVE REQUIREMENTS
+
+The website must work at:
+
+320px, 360px, 375px, 390px, 430px, 768px, 1024px, 1280px, 1440px, and 1920px.
+
+Requirements:
+- No horizontal overflow.
+- No overlapping content.
+- No clipped buttons.
+- No distorted images.
+- No broken navigation.
+- No unreadable text.
+- No inaccessible controls.
+- No desktop-only interactions.
+- No fixed-height sections that cut off content.
+- No oversized hero graphics on mobile.
+
+Test the header, hero, service cards, showcase sections, FAQs, forms, and footer.
+
+Use responsive layouts that adapt naturally.
+
+Do not simply shrink the desktop layout.
+
+Ensure all buttons and form controls are comfortably usable on touchscreens.
+
+---
+
+# 12. ACCESSIBILITY REQUIREMENTS
+
+Aim for WCAG 2.2 AA.
+
+Implement:
+- Semantic HTML.
+- Correct heading hierarchy.
+- Keyboard-accessible navigation.
+- Visible focus indicators.
+- Accessible forms.
+- Proper labels.
+- Sufficient contrast.
+- Accessible accordions.
+- Reduced-motion support.
+- Descriptive image alt text.
+- Meaningful link text.
+- Appropriate status announcements.
+- Correct button and link semantics.
+
+Do not rely on color alone to convey information.
+
+Avoid unnecessary ARIA attributes.
+
+---
+
+# 13. CONTACT FORM WITHOUT A BACKEND
+
+The website must remain static and compatible with GitHub Pages.
+
+Use FormSubmit as the initial email delivery option:
+
+https://formsubmit.co/
+
+Configure the destination as:
+
+odoodeveloper@10gmail.com
+
+Use a normal HTML form with the documented integration.
+
+A typical form endpoint follows this pattern:
+
+https://formsubmit.co/odoodeveloper@10gmail.com
+
+Follow the provider's current documentation for form fields, recipient verification, redirects, and spam protection.
+
+Requirements:
+- Correct HTML form submission.
+- Client-side validation.
+- Accessible progress and error messages.
+- A working success flow once configured.
+- No fake success messages.
+- No exposed API secrets.
+- No backend requirement.
+- A secondary email link.
+
+Do not claim that the email integration is ready until the recipient has been verified and the submission has been tested.
+
+If the integration uses a redirect, create a suitable thank-you page or use a supported return URL.
+
+If AJAX submission is used, handle the provider's documented response format correctly and verify that the integration supports the chosen approach.
+
+Do not assume an undocumented response format.
+
+Important: Verify the supplied email address before launch. Use the exact supplied address until the owner confirms any correction.
+
+---
+
+# 14. SEO WITHOUT JSON FILES
+
+Implement conventional SEO using HTML metadata.
+
+Every page must have:
+- A unique title.
+- A unique description.
+- Responsive viewport metadata.
+- Appropriate language metadata.
+- Open Graph metadata.
+- Social sharing metadata.
+- Correct heading structure.
+- Descriptive links.
+- Appropriate image alt text.
+
+Use relevant Odoo service keywords naturally.
+
+Create:
+- robots.txt.
+- sitemap.xml.
+
+These files must contain their proper text formats and must not be JSON.
+
+Create a standard favicon without a web app manifest.
+
+Do not generate JSON-LD.
+
+Do not create a manifest.json file.
+
+Do not invent a final production domain.
+
+Use a clearly documented placeholder for canonical URLs and update it when the actual domain is confirmed.
+
+Avoid keyword stuffing and unsupported SEO claims.
+
+---
+
+# 15. CUSTOM DOMAIN AND GITHUB PAGES
+
+The website must support:
+1. GitHub Pages project URLs.
+2. GitHub Pages user or organization URLs.
+3. A custom domain connected to GitHub Pages.
+
+Create a CNAME file containing a placeholder or the verified domain only.
+
+Do not invent a domain name.
+
+Explain that the CNAME file should contain only the actual custom domain when one is configured.
+
+If the owner has not selected a domain, leave the CNAME configuration ready for later and document the required update.
+
+Use relative paths consistently.
+
+Avoid root-relative asset paths that break when the project is hosted under a repository subdirectory.
+
+Ensure navigation works after deployment.
+
+Explain:
+- Creating the GitHub repository.
+- Uploading the source files.
+- Enabling GitHub Pages.
+- Choosing the deployment source.
+- Configuring a custom domain.
+- Configuring DNS records.
+- Enabling HTTPS when available.
+- Updating the sitemap and canonical URLs.
+- Testing the live website.
+
+Do not claim that a custom domain is live until DNS and GitHub Pages configuration have actually been completed.
+
+The site must not require a paid hosting provider or build process.
+
+Domain registration itself may involve a separate fee.
+
+---
+
+# 16. PERFORMANCE REQUIREMENTS
+
+Optimize for real-world performance.
+
+Implement:
+- Lightweight HTML.
+- Modular CSS.
+- Efficient JavaScript.
+- Optimized images.
+- Correct image dimensions.
+- Lazy loading for appropriate below-the-fold images.
+- Deferred scripts where appropriate.
+- Limited external dependencies.
+- Minimal layout shifts.
+- Appropriate font loading.
+- Efficient event handling.
+
+Avoid:
+- Oversized images.
+- Unnecessary video backgrounds.
+- Heavy animation libraries.
+- Excessive DOM updates.
+- Unnecessary external scripts.
+- Blocking JavaScript.
+- Lazy-loading the primary hero image when it would delay its initial display.
+
+Target strong Core Web Vitals performance, but do not claim scores without testing.
+
+---
+
+# 17. TESTING REQUIREMENTS
+
+Before delivery, inspect the complete project.
+
+Check every HTML page for:
+- Correct structure.
+- Unique titles and descriptions.
+- Working internal links.
+- Correct image paths.
+- Correct CSS paths.
+- Correct JavaScript paths.
+- Proper labels.
+- Valid IDs.
+- Appropriate navigation.
+- Correct footer links.
+
+Check CSS for:
+- Broken responsive layouts.
+- Horizontal overflow.
+- Conflicting declarations.
+- Missing styles.
+- Unreadable text.
+- Inconsistent components.
+
+Check JavaScript for:
+- Syntax errors.
+- Missing element assumptions.
+- Duplicate event listeners.
+- Broken navigation.
+- Broken accordions.
+- Form validation errors.
+- Unhandled network failures.
+
+Test the contact form where the configured integration is available.
+
+Review responsive layouts at the required viewport widths.
+
+Check keyboard navigation and reduced-motion behavior.
+
+Do not claim a test passed unless it was performed.
+
+Clearly list any external configuration steps that remain.
+
+---
+
+# 18. GITHUB PAGES DEPLOYMENT DOCUMENTATION
+
+Create a complete README.md.
+
+Explain:
+- Project overview.
+- File structure.
+- Local preview.
+- GitHub repository setup.
+- GitHub Pages deployment.
+- Custom-domain configuration.
+- Email form configuration.
+- Logo replacement.
+- Updating page content.
+- SEO configuration.
+- Testing and troubleshooting.
+
+Provide practical commands where useful, but do not require a build tool or package manager.
+
+The website must be deployable by uploading the static files to a GitHub repository and enabling GitHub Pages.
+
+No JSON files may be created as part of deployment.
+
+---
+
+# 19. FINAL DELIVERY
+
+Deliver the entire working website.
+
+Required deliverables:
+- All requested HTML pages.
+- All CSS files.
+- All JavaScript files.
+- Logo and favicon assets or clear instructions for using the supplied logo.
+- SVG illustrations and icons where needed.
+- robots.txt.
+- sitemap.xml.
+- CNAME configuration instructions or file.
+- README.md.
+- Contact form integration.
+- Responsive design.
+- Testing checklist.
+- Deployment instructions.
+
+If your environment supports file creation, create the complete project directory and provide it as a ZIP archive.
+
+Before creating the archive, inspect the directory recursively and confirm that it contains **zero files ending in `.json`**.
+
+Also ensure there are no unused files, broken references, incomplete pages, or missing essential assets.
+
+Do not provide only partial code.
+
+Do not omit sections with instructions such as "implement the rest later."
+
+Do not create fake integrations or pretend to have tested services that are not configured.
+
+---
+
+# 20. FINAL ACCEPTANCE CRITERIA
+
+The project is complete only when:
+
+1. ZodoTech has a distinctive professional visual identity.
+2. The design follows the logo's navy, blue, cyan, and purple palette.
+3. The website contains all requested pages.
+4. The HTML, CSS, and JavaScript are clean and maintainable.
+5. All pages are fully responsive.
+6. The mobile navigation works.
+7. Buttons and links have correct destinations.
+8. The contact form has a real submission mechanism that can be configured for the supplied email.
+9. SEO metadata is implemented.
+10. The website supports GitHub Pages.
+11. The website supports later custom-domain configuration.
+12. No backend is required for ordinary website delivery.
+13. No JSON files exist anywhere in the final project.
+14. No package manager or build process is required.
+15. The website has no known unaddressed critical errors.
+16. All untested external integrations are clearly identified.
+17. The README contains complete deployment instructions.
+18. The final source code is delivered in full.
+
+## FINAL COMMAND
+
+Build the complete ZodoTech website now.
+
+Use advanced HTML5, CSS3, and vanilla JavaScript.
+
+Create a premium, original, responsive, multi-page website suitable for a professional Odoo solutions company.
+
+Do not use JSON files of any kind.
+
+Do not introduce unnecessary frameworks, dependencies, backend services, or build processes.
+
+Do not stop after writing a plan.
+
+Implement the entire project, review the code, fix verifiable defects, test the available functionality, and deliver the complete source code with GitHub Pages and custom-domain deployment instructions.

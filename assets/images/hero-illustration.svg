@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520" fill="none" width="100%" height="auto" class="hero-erp-svg">
+  <defs>
+    <!-- Brand Gradients -->
+    <linearGradient id="heroCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071A42"/>
+      <stop offset="100%" stop-color="#06122F"/>
+    </linearGradient>
+    <linearGradient id="heroCardGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5F8FF"/>
+    </linearGradient>
+    <linearGradient id="brandLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0878F9"/>
+      <stop offset="50%" stop-color="#00D5F2"/>
+      <stop offset="100%" stop-color="#8B18F5"/>
+    </linearGradient>
+    <linearGradient id="cyanPurpleGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D5F2"/>
+      <stop offset="100%" stop-color="#8B18F5"/>
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0878F9" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#8B18F5" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#071A42" flood-opacity="0.14"/>
+    </filter>
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Backdrop Glow -->
+  <circle cx="340" cy="260" r="220" fill="url(#accentGlow)"/>
+  
+  <!-- Subtle Grid Pattern in background -->
+  <g stroke="#E4EAF4" stroke-width="1" stroke-dasharray="3 3" opacity="0.6">
+    <line x1="80" y1="60" x2="600" y2="60"/>
+    <line x1="80" y1="180" x2="600" y2="180"/>
+    <line x1="80" y1="300" x2="600" y2="300"/>
+    <line x1="80" y1="420" x2="600" y2="420"/>
+    <line x1="140" y1="40" x2="140" y2="460"/>
+    <line x1="280" y1="40" x2="280" y2="460"/>
+    <line x1="420" y1="40" x2="420" y2="460"/>
+    <line x1="560" y1="40" x2="560" y2="460"/>
+  </g>
+
+  <!-- Connected Workflow Pipelines -->
+  <path d="M 170 140 C 240 140, 240 260, 310 260" stroke="url(#brandLineGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 170 380 C 240 380, 240 260, 310 260" stroke="url(#brandLineGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 370 260 C 440 260, 440 140, 510 140" stroke="url(#brandLineGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 370 260 C 440 260, 440 380, 510 380" stroke="url(#brandLineGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Pulsing Data Transmission Dots along pipelines -->
+  <circle cx="240" cy="200" r="4.5" fill="#00D5F2">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="440" cy="200" r="4.5" fill="#8B18F5">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="240" cy="320" r="4.5" fill="#0878F9">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Central Core Hub: Odoo Operations Engine -->
+  <g filter="url(#cardShadow)">
+    <rect x="260" y="195" width="160" height="130" rx="16" fill="url(#heroCardGrad)" stroke="rgba(0, 213, 242, 0.4)" stroke-width="1.5"/>
+    <!-- Header indicator bar inside hub -->
+    <rect x="280" y="215" width="40" height="4" rx="2" fill="#00D5F2"/>
+    <text x="280" y="240" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Odoo Core Engine</text>
+    <text x="280" y="258" font-family="'DM Sans', sans-serif" font-size="10.5" fill="#9FB6DB">Enterprise &amp; Custom Modules</text>
+    
+    <!-- Mini progress / status bar -->
+    <rect x="280" y="278" width="120" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+    <rect x="280" y="278" width="94" height="6" rx="3" fill="url(#brandLineGrad)"/>
+    <text x="280" y="304" font-family="'JetBrains Mono', monospace" font-size="9" fill="#00D5F2">STATUS: SYNCHRONIZED</text>
+  </g>
+
+  <!-- Node 1: Sales & Quotations (Top Left) -->
+  <g filter="url(#cardShadow)" class="float-subtle">
+    <rect x="50" y="85" width="160" height="95" rx="12" fill="url(#heroCardGradLight)" stroke="#E4EAF4" stroke-width="1.5"/>
+    <circle cx="80" cy="115" r="14" fill="#EDF5FF"/>
+    <!-- Sales Cart / Doc Icon -->
+    <path d="M 75 115 L 78 121 L 86 110" stroke="#0878F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="104" y="114" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#071A42">CRM &amp; Sales</text>
+    <text x="104" y="127" font-family="'DM Sans', sans-serif" font-size="9.5" fill="#63708A">Automated Pipeline</text>
+    <line x1="70" y1="145" x2="190" y2="145" stroke="#E4EAF4" stroke-width="1"/>
+    <text x="70" y="162" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#059669">+140% Quotations</text>
+  </g>
+
+  <!-- Node 2: Automated Workflows (Bottom Left) -->
+  <g filter="url(#cardShadow)">
+    <rect x="50" y="335" width="160" height="95" rx="12" fill="url(#heroCardGradLight)" stroke="#E4EAF4" stroke-width="1.5"/>
+    <circle cx="80" cy="365" r="14" fill="#FBF0FF"/>
+    <!-- Gear / Process Icon -->
+    <path d="M 77 365 A 3 3 0 1 0 83 365 A 3 3 0 1 0 77 365" stroke="#8B18F5" stroke-width="2"/>
+    <text x="104" y="364" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#071A42">Automation</text>
+    <text x="104" y="377" font-family="'DM Sans', sans-serif" font-size="9.5" fill="#63708A">Approvals &amp; Alerts</text>
+    <line x1="70" y1="395" x2="190" y2="395" stroke="#E4EAF4" stroke-width="1"/>
+    <text x="70" y="412" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#8B18F5">Zero Manual Entry</text>
+  </g>
+
+  <!-- Node 3: Inventory & Warehouses (Top Right) -->
+  <g filter="url(#cardShadow)">
+    <rect x="470" y="85" width="160" height="95" rx="12" fill="url(#heroCardGradLight)" stroke="#E4EAF4" stroke-width="1.5"/>
+    <circle cx="500" cy="115" r="14" fill="#E6FCFF"/>
+    <!-- Box / Stock Icon -->
+    <rect x="494" y="109" width="12" height="12" rx="2" stroke="#00D5F2" stroke-width="2"/>
+    <text x="524" y="114" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#071A42">Inventory</text>
+    <text x="524" y="127" font-family="'DM Sans', sans-serif" font-size="9.5" fill="#63708A">Real-Time Sync</text>
+    <line x1="490" y1="145" x2="610" y2="145" stroke="#E4EAF4" stroke-width="1"/>
+    <text x="490" y="162" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#0878F9">99.8% Accuracy</text>
+  </g>
+
+  <!-- Node 4: Accounting & External APIs (Bottom Right) -->
+  <g filter="url(#cardShadow)" class="float-subtle">
+    <rect x="470" y="335" width="160" height="95" rx="12" fill="url(#heroCardGradLight)" stroke="#E4EAF4" stroke-width="1.5"/>
+    <circle cx="500" cy="365" r="14" fill="#EDF5FF"/>
+    <!-- Financial Pulse Icon -->
+    <path d="M 494 367 L 498 361 L 502 369 L 506 363" stroke="#0878F9" stroke-width="2" stroke-linecap="round"/>
+    <text x="524" y="364" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#071A42">Invoicing &amp; APIs</text>
+    <text x="524" y="377" font-family="'DM Sans', sans-serif" font-size="9.5" fill="#63708A">Fast Reconciliation</text>
+    <line x1="490" y1="395" x2="610" y2="395" stroke="#E4EAF4" stroke-width="1"/>
+    <text x="490" y="412" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#059669">Continuous Audit</text>
+  </g>
+
+  <!-- Central floating pill telemetry -->
+  <g filter="url(#cardShadow)">
+    <rect x="250" y="360" width="180" height="34" rx="8" fill="#FFFFFF" stroke="#E4EAF4" stroke-width="1"/>
+    <circle cx="268" cy="377" r="4" fill="#059669"/>
+    <text x="282" y="381" font-family="'DM Sans', sans-serif" font-size="11" font-weight="600" fill="#071A42">Native Odoo Architecture</text>
+  </g>
+</svg>

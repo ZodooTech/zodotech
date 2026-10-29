@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="orbitGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B18F5"/>
+      <stop offset="50%" stop-color="#0878F9"/>
+      <stop offset="100%" stop-color="#00D5F2"/>
+    </linearGradient>
+    <linearGradient id="zTop" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#8B18F5"/>
+      <stop offset="70%" stop-color="#0878F9"/>
+      <stop offset="100%" stop-color="#06122F"/>
+    </linearGradient>
+    <linearGradient id="zDiag" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#0878F9"/>
+      <stop offset="100%" stop-color="#00D5F2"/>
+    </linearGradient>
+    <linearGradient id="zBottom" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#0878F9"/>
+      <stop offset="100%" stop-color="#00D5F2"/>
+    </linearGradient>
+    <linearGradient id="sq1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B18F5"/>
+      <stop offset="100%" stop-color="#C51CF7"/>
+    </linearGradient>
+    <linearGradient id="sq2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0878F9"/>
+      <stop offset="100%" stop-color="#00D5F2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded subtle container -->
+  <rect width="120" height="120" rx="26" fill="#071A42"/>
+  
+  <!-- Orbit Ring -->
+  <ellipse cx="60" cy="62" rx="46" ry="17" transform="rotate(-15 60 62)" stroke="url(#orbitGrad)" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Top bar of Z -->
+  <path d="M 28 34 C 40 25, 48 24, 76 24 C 82 24, 86 28, 83 34 L 75 42 L 38 42 Z" fill="url(#zTop)"/>
+  
+  <!-- Diagonal stem of Z -->
+  <path d="M 77 34 L 38 78 L 52 78 L 86 38 Z" fill="url(#zDiag)"/>
+  
+  <!-- Bottom bar of Z -->
+  <path d="M 36 76 L 82 76 C 88 76, 92 80, 89 86 C 86 90, 80 92, 72 92 L 32 92 Z" fill="url(#zBottom)"/>
+
+  <!-- Floating Tech Data Blocks -->
+  <rect x="88" y="18" width="13" height="13" rx="3" fill="url(#sq1)"/>
+  <rect x="96" y="34" width="10" height="10" rx="2.5" fill="url(#sq2)"/>
+  <rect x="87" y="44" width="8" height="8" rx="2" fill="url(#sq2)"/>
+  <rect x="104" y="47" width="6" height="6" rx="1.5" fill="url(#sq1)"/>
+</svg>
